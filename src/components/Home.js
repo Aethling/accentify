@@ -1,6 +1,7 @@
 import { useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import { TextField, Button, Stack } from "@mui/material";
+import Recorder from "./Recorder"
 
 export const Home = () => {
   const [value, setValue] = useState("")
@@ -33,6 +34,7 @@ export const Home = () => {
         </Button>
         </Stack>
       </form>
+      <Recorder />
     </Stack>
   );
 };
