@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import ReactPlayer from "react-player";
 import { TextField, Button, Stack } from "@mui/material";
 import Recorder from "./Recorder"
+import Upload from "./Upload"
 
 export const Home = () => {
   const [value, setValue] = useState("")
@@ -35,6 +36,7 @@ export const Home = () => {
         </Stack>
       </form>
       <Recorder />
+      <Upload />
     </Stack>
   );
 };
