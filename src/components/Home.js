@@ -4,7 +4,7 @@ import { TextField, Button, Stack } from "@mui/material";
 import Recorder from "./Recorder"
 import Upload from "./Upload"
 
-export const Home = () => {
+const Home = () => {
   const [value, setValue] = useState("")
   const [url, setUrl] = useState("https://www.youtube.com/watch?v=fy-bd5AC-Ms&ab_channel=LanguageofEarth")
   const fileInput = useRef(null);
@@ -35,8 +35,9 @@ export const Home = () => {
         </Button>
         </Stack>
       </form>
-      <Recorder />
+      {/* <Recorder /> */}
       <Upload />
     </Stack>
   );
 };
+export default Home
